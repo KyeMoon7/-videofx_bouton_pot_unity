@@ -62,16 +62,21 @@ public class ScrubPitchGlitch : MonoBehaviour
         slider.value = 0;
     }
 
+    public void NextVideo()
+    {
+        index = index + 1;
+
+        audioSource.clip = audioClips[index % audioClips.Length];
+        videoFrameScrubber.SetVideoClip(videoClips[index % videoClips.Length]);
+        audioSource.Play();
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            index = (index + 1);
-
-            audioSource.clip = audioClips[index % audioClips.Length];
-            videoFrameScrubber.SetVideoClip(videoClips[index % videoClips.Length]);
-            audioSource.Play();
+            NextVideo();
         }
     }
 
