@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 309f475443916d241974b8e41302fdde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrubPg: {fileID: 0}
+  scrubPg: {fileID: 738266255}
   oscReceiver: {fileID: 55757203}
   oscTransmitter: {fileID: 55757202}
   potInMin: 0
@@ -217,7 +217,7 @@ MonoBehaviour:
   _workInEditor: 0
   _localHostMode: 0
   _localHost: 192.168.0.54
-  _localPort: 7001
+  _localPort: 8001
 --- !u!328 &72783521 stripped
 VideoPlayer:
   m_CorrespondingSourceObject: {fileID: 1263748232250814979, guid: fa10073a987bd413f9b099510d30a9b2, type: 3}
